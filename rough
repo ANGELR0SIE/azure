@@ -1,0 +1,74 @@
+
+
+
+<section class="products-and-services"></section>
+<section class="gartner"></section>
+<section class="resourse-by-role-model"></section>
+<section class="global-infrastructure"></section>
+<section class="customer-stories"></section>
+<section class="take-the-next-step"></section>
+<section class="get-mobile-app"></section>
+</main>
+<footer></footer>
+
+
+
+
+
+
+
+
+
+
+<section class="limitless-innovation-350px">
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <div class="featured-news">
+            <div class="limitless-innovation-div">
+              <div class="limitless-innovation-div-2">
+                <div class="title" id="limitless-innovation">
+                  AZURE. LIMITLESS INNOVATION.
+                </div>
+                <div class="main-head" id="is-your-infrastructure">
+                  Is your infrastructure AI-ready?
+                </div>
+                <div
+                  class="paragraph"
+                  id="limitless-innovation-paragraph"
+                >
+                  Migrate to Azure today to start building on an
+                  infrastructure purpose-built for AI workloads. Pay as
+                  you go or try Azure free for up to 30 days. There’s no
+                  upfront commitment—cancel anytime.
+                </div>
+                <div
+                  class="button-flex"
+                  id="limitless-innovation-button-flex"
+                >
+                  <button class="get-started" id="innovatio-button-blue">
+                    <span>Get started</span>
+                  </button>
+                  <button class="try-azure" id="innovatio-button-green">
+                    <span>Try Azure for free</span>
+                  </button>
+                </div>
+                <div class="spacer-height-2rem"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="empty-div-50"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+

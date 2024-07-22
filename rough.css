@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 3000px;
+}
+
+.sticky-nav-860 {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background-color: #fff; /* Background color for visibility */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    padding: 10px; /* Optional: some padding for content */
+    border-bottom: 1px solid #ddd; /* Optional: add a bottom border for separation */
+}
+
+.sticky-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Optional: space between items */
+}
+
+.sticky-nav-list li {
+    padding: 10px; /* Padding for better click area */
+    cursor: pointer;
+}
+
+.sticky-nav-list .selected {
+    font-weight: bold; /* Highlight the selected item */
+}
+
+.try-azure {
+    margin-top: 10px; /* Space between list and button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #0078D4; /* Azure color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    cursor: pointer;
+    align-self: flex-start; /* Align button to the start of the flex container */
+}
+
+.content {
+    margin-top: 60px; /* Space below the sticky nav for demonstration */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the content area */
+}
