@@ -46,7 +46,8 @@
     align-items: center;
     height: 54px;
 
-
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1600px;
   }
   .microsoft-logo {
@@ -197,8 +198,8 @@ margin-right: 5px;
 
 }
 .nav-bar-2nd-link li{
-  margin: 1px 0px 0px;
-  padding: 10px 8px 10px;
+  margin: 1px 4px 0px;
+  padding: 16px 8px 10px;
 }
 .search-icon{
   display: flex;
@@ -239,6 +240,9 @@ font-size: 13px;
   color: #fff;
 
 }
+.nav-bar-2nd-link .get-started{
+  width: max-content;
+}
 .signin-button-white{
   border: 1px solid black !important;
   background-color: transparent;
@@ -262,5 +266,41 @@ font-size: 13px;
 }
 .search-icon #hidden-860{
 display: flex;
+}
+}
+@media (min-width:1920px){
+  .azure-title span{
+    margin-left: 32px !important;
+  }
+  .navbar-first-links{
+    padding-left: 10px;
+  }
+  .navbar-first-links li {
+    /* padding: 16px 30px 16px 16px;
+    margin: 1px -6px 0px 0px; */
+  
+  }
+  #hidden-860{
+    display: flex !important;
+    font-size: 13px;
+    font-family: font2;
+    color: rgb(38, 38, 38);
+    margin-right: 5px;
+
+  }
+  .navbar-first-links{
+    gap: 20px;
+  } 
+  .nav-bar-flex-for-search-to-sign-in{
+    margin-bottom: 5px;
+  }  
+  .search-icon{
+    padding-left: 32px;
+    margin-left: 10pc;
+    width: 77.77px;
+  }
+  .container {
+    margin-top: 2% !important;
+    padding: 0 56px;
 }
 }

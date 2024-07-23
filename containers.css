@@ -50,10 +50,11 @@ h3{
    max-width: 100%; 
 }
 .feautured-img-flex img{
-    object-fit: cover;
+    object-fit: fill;
     height: inherit;
     border-radius: 8px;
     max-width: 100%;
+    aspect-ratio: 1.77778/1;
 }
 .container-content{
     display: flex;
@@ -257,73 +258,6 @@ hr{
     margin:0 -4px;
     gap: 12px;
 }
-.image-container{
-    padding: 0 4px;
-  
-    max-width: 100%;
-}
-.image-container-grid{
-    display: grid;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 4px;
-    background-image: linear-gradient(rgba(4, 13, 18, 0) 0%, rgba(4, 13, 18, 0.8) );
-    border-radius:16px ;
-    position: relative;
-}
-.image-area{
-grid-area: 1/1;
-z-index: 1;
-aspect-ratio: 21/9;
-max-height: 100%;
-max-width: 100%;
-
-}
-
-.image-area img{
-    object-fit: cover;
-    border-radius:16px ;
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 21/9;
-    grid-area: 1/1;
-
-}
-.image-container-content{
-    position: absolute;
-    z-index: 1;  
-    padding: 16px;                                                                                    
-}
-.image-container-contenx-flex{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-   
-}
-.image-container-contenx-head h3{
-    font-size: 24px;
-    letter-spacing: -1.2px;
-    font-family: font2;
-
-}
-.image-container-content-paragraph{
-    font-size: 16px;
-    letter-spacing: -0.48px;
-    margin: 0;
-}
-.image-container-content-button{
-    color: rgb(23,37,61);
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    border-bottom: 2px solid transparent;
-    padding: 12px;
-background-color: rgb(179,218,240);
-}
-.image-container-content-button span{
-    padding-bottom: 2px;
-    font-size: 15px;
-    text-align: center;
-    font-family: font3;
-}
 .cards{
     padding:0 4px;
 
@@ -439,10 +373,627 @@ font-family: font3;
 #visible-860px-li{
     display:none;
 }
+.gartner-content{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    gap: 32px;
+    line-height: 24px;
+
+}
+.empty-flex{
+    display: flex;
+}
+.Resources-by-role .container-head-layout{
+    margin-bottom: 24px;
+    padding-top:48px;
+    text-align: center;
+
+}
+.Resources-by-role .main-head{
+    font-size: 28px;
+}
+.res-rol-scroll{
+    width: 100%;
+}
+.res-rol-scroll ul{
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    overflow: scroll;
+    
+}
+.res-rol-scroll li{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    border-left: 1.5px solid #a9b1bc;
+    align-items: center;
+   column-gap: 26px;
+    padding: 11px 16px 13px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    text-wrap: nowrap;
+    width: 220px;
+
+}
+.Resources-by-role .container-head-row{
+    display: block;
+}
+.res-selected{
+    border-bottom: 4px solid #0078d4;
+}
+.res-rol-next-button{
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-right: -10px;
+    background: linear-gradient(90deg, transparent, #f5fafdd7, #f5fafdef, #f5fafd, #f5fafd);
+    position: absolute;
+    right: 10px;
+    padding: 13px 0;
+    margin-top: 10px;
+    padding-left: 60px;
+    padding-right: 10px;
+
+}
+.image-heading-resourses{
+    padding-bottom: 48px;
+    padding-top: 24px;
+
+}
+.res-rol-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+}
+.res-sol-body-head span{
+    font-size: 20px;
+    font-family: font;
+   
+}
+.res-rol-flex .button-link-flex{
+    margin-top: 0;
+}
+.image-resoureces{
+    border-radius: 16px;
+    border-bottom: 1px solid transparent;
+    margin-top: 24px;
+    padding: 16px;
+}
+.image-resoureces img{
+    border-radius: 8px;
+    object-fit: fill;
+    max-width: 100%;
+}
+.Resources-by-role{
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1390&qlt=100&fmt=png-alpha&fit=constrain);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.explore-globe{
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: font3;
+    font-size: 15px;
+    line-height: 22px;
+   
+    font-weight: 500;
+    color: #0e1726;
+    padding: 13px 18px 17px 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    background-color: #b3daf0;
+}
+.explore-globe span{
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    
+}
+.azure-global-paragraph{
+    font-size: 18px;
+    color: #d6e9f3;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    font-family: font2;
+}
+.azure-global-head{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+    color: #fff;
+    font-family: font3;
+
+}
+.global-contents{
+   padding-top: 60px;
+    padding-bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 18px;
+    overflow: hidden;
+    /* padding: 95px 0 126px; */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+.azure-global{
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-AzureRegions-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=983&qlt=95&fmt=png-alpha&fit=constrain);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.next-step-head{
+    font-size: 28px;
+    font-family: font2;
+    text-align: center;
+}
+
+.next-step-grid{
+    margin-top: 32px;
+    padding: 0 4px;
+    gap: 8px;
+    display: grid;
+
+}
+.next-step .container-padding-12px{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.next-step-card{
+    border-radius: 16px;
+    border: 1px solid rgb(230,242,251);
+    padding: 16px;
+    background-color: #fff;
+
+}
+.next-step-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.next-step-card-head{
+    font-family: font3;
+    font-size: 18px;
+}
+.next-step{
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-3up-icon-card-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1648&qlt=100&fmt=png-alpha&fit=constrain);
+    background-position: center;
+        background-size: cover;
+}
+footer{
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: grid;
+    place-items: center;
+    padding-top: 36px;
+}
+.footer-content-grid{
+    grid-template-columns: 1fr;
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    max-width:1328px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+    row-gap: 44px;
+}
+.footer-content-sub-grid{
+    padding: 0 12px;
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+}
+.footer-content-sub-grid li{
+    min-width: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: font2;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #757575;
+    cursor: pointer;
+    min-width: max-content;
+}
+.footer-content-sub-grid-head{
+    font-family: font3 !important;
+    font-size: 15px !important;
+    line-height: 20px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: #616161;
+    cursor: auto;
+    margin-bottom: -4px; 
+}
+.footer-bottom-grid{
+    display: flex;
+    gap: 18px;
+    padding: 30px 24px 16px;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: calc(1600px + 10%);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.language-flex{
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.links-flex{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 24px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: flex-start;
+    column-gap: 13px;
+    row-gap: 6px;
+}
+.customer-scrollable-container{
+    margin-left: -4px;
+    margin-top: 24px;
+    padding: 0 4px;
+    /* overflow-x: scroll; */
+}
+.customer-scrollable-container-flex{
+    display: grid;
+   grid-template-columns: repeat(5,1fr);
+    gap: 24px;
+    /* align-items: stretch; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1px 6px 1px 0;
+    /* overflow-x: scroll; */
+}
+.scrollable-card{
+    width: 100%;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.scrollable-card-padding{
+    padding: 4px;
+}
+.scrollble-card-flex{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+}
+.scrollable-card-image-container{
+   max-width: 100%;
+   padding: 8px;
+   padding-bottom: 0; 
+}
+.scrollable-card-image-container img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+}
+.for-1440{
+    display: none;
+}
+.scrollable-card-content{
+    display: flex;
+    flex-direction: column;
+   gap: 24px;
+    padding: 16px;
+}
+.scrollable-content-top-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.scrollable-card-logo{
+    display: flex;
+    height: 76px;
+    /* border-radius: 8px;
+    border: 1px solid rgb(189, 197, 210); */
+
+}
+.srollable-card-log-flex{
+    border-radius: 8px;
+    border: 1px solid rgb(189, 197, 210);
+
+}
+.scrollable-card-logo img{
+    object-fit: fill;
+    border-radius: 8px;
+}
+.scrollable-container-pragrapg{
+    letter-spacing: -1px;
+    line-height: 28px;
+    font-size: 20px;
+    font-family: font3;
+}
+.scrollable-container-bottom-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-wrap: break-word;
+    line-height: 24px;
+ height: 100%;
+    margin-top: 57px;
+
+}
+.link-flex-head{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bottom-flex-head{
+    font-family: font3;
+    font-size: 16px;
+}
+.scrollable-link-flex{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+.scrollable-link-flex ul{
+    justify-content: flex-start;
+    display: flex;
+flex-direction: column;
+    gap: 12px;
+}
+.scrollable-link-flex li{
+    display: contents;
+    display: flex;
+    gap: 8px;
+}
+.link{
+    color: rgb(0, 103, 184);
+    font-size: 14px;
+    letter-spacing: -0.48px;
+    font-family: font3;
+}
+.scrollable-card-button{
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border:2px solid transparent;
+    background-color: rgb(0,120,212);
+    padding: 12px;
+    justify-content: center;
+
+}
+.scrollable-card-button span{
+    line-height: 22px;
+    padding-bottom: 2px;
+    letter-spacing: -0.3;
+    font-size: 15px;
+    font-family: font3;
+    color: #fff;
+    text-align: center;
+}
+
+.scrollable-card{
+ flex-basis: 100%;
+}
+.customer-stories .scroll-button{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 8px;
+    margin-top: 35px;
+    width: 100%;
+    border-radius: 24px;
+    margin-left: -20px;
+    background-color: #fff;
+}
+.scrollable-button-left, .scrollable-button-right{
+    background-color: #fff;
+    border: 2px solid rgb(214, 215, 228);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; 
+}
+.scrollable-button-right{
+    transform: scaleX(-1);
+    border: 2px solid rgb(2, 2, 2);
+    background-color: white;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+.scroll-button img{
+    width: 40px;
+   
+}
+.scrollable-button-left img{
+    filter: opacity(0.4);
+}
+.image-container{
+    padding: 0 4px;
+  
+    max-width: 100%;
+}
+.image-container-grid{
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 4px;
+    background-image: linear-gradient(rgba(4, 13, 18, 0) 0%, rgba(4, 13, 18, 0.8) );
+    border-radius:16px ;
+    position: relative;
+}
+.image-area{
+grid-area: 1/1;
+z-index: 1;
+/* aspect-ratio: 21/9; */
+max-height: 100%;
+max-width: 100%;
+
+}
+
+.image-area img{
+    object-fit: cover;
+    border-radius:16px ;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 21/9;
+    grid-area: 1/1;
+
+}
+.image-container-content{
+    position: absolute;
+    z-index: 1;  
+    padding: 16px;                                                                                    
+}
+.image-container-contenx-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   
+}
+.image-container-contenx-head h3{
+    font-size: 24px;
+    letter-spacing: -1.2px;
+    font-family: font2;
+
+}
+.image-container-content-paragraph{
+    font-size: 16px;
+    letter-spacing: -0.48px;
+    margin: 0;
+    color: #fff;
+}
+.image-container-content-button{
+    color: rgb(23,37,61);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 2px solid transparent;
+    padding: 12px;
+    justify-content: center;
+background-color: rgb(179,218,240);
+}
+.image-container-content-button span{
+    padding-bottom: 2px;
+    font-size: 15px;
+    text-align: center;
+    font-family: font3;
+
+}
+.button-cards-customer-stories{
+    display: none;
+}
+.language-flex{
+    align-items: flex-start;
+}
+.language-flex li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.privacy-chices img{
+   margin-left: -10px;
+}
+.language-flex li img{
+height: 22.2px;
+margin-left: -2px;
+}
+.language-flex li span{
+    margin-bottom: 3px;
+    margin-left: 1.5px;
+    margin-right: -4px;
+    font-family: font2;
+    text-wrap: nowrap;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #757575;
+    cursor: pointer;
+    }
+    .links-flex{
+        padding-left: 0px;
+        justify-content: flex-start;
+        column-gap: 13px;
+        row-gap: 6px;
+        flex-wrap: wrap;
+    }
+    .links-flex li{
+        font-family: font2;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: normal;
+        font-weight: 400;
+        color: #757575;
+        cursor: pointer;
+        min-width: max-conten 
+    }
+@media(min-width:401px){
+    .image-area {
+        grid-area: 1 / 1;
+        z-index: 1;
+        aspect-ratio: 21 / 9;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+@media(min-width:350px) and (max-width:400px){
+    .image-container-grid{
+        height: 220px;
+    }
+}
 @media (min-width:550px){
     .container-padding-12px{
         padding: 0 64px;
     }
+    .explore-globe{
+        width: 142.91px;
+        text-wrap: nowrap;
+    }
+    .Resources-by-role{
+        background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1968&qlt=100&fmt=png-alpha&fit=constrain);
+        background-position: center;
+        background-size: cover;
+    }
+    .next-step{
+       background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-3up-icon-card-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1648&qlt=100&fmt=png-alpha&fit=constrain);
+        background-position: center;
+            background-size: cover;
+    }
+    .footer-content-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 44px;
+    }
+    .image-container-grid{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+   
 }
 @media (min-width:860px){
     .container-cards-grid{
@@ -485,10 +1036,17 @@ display: flex;
 }
 .sol-scroll-ul{
     flex: 1;
+        flex-basis: calc(33%-8px);
+        max-height: 492px;
+        overflow-y: auto;
+        overflow-x: hidden;
 }
 .image-container{
     flex: 2;
 
+}
+.sol-scroll-ul li{
+    margin-left: 48px;
 }
 .container-image-play-btn{
     display: flex;
@@ -522,43 +1080,325 @@ display: flex;
     justify-content: center;
     align-items: center;
 }
+.sol-scroll-ul-head{
+    justify-content: left;
+    gap: 10px;
+}
 .container-play-button-sol img{
     width: 20px;
     height: 20px;
 }
-
-/* .solutions .scroll-flex{
-    height: 100vh !important;
-    max-height: 492px;
-} */
-/* .solutions.scroll-flex>div:first-child {
-    display: flex;
-    width: 100%;
+.container-content{
+    padding: 24px;
 }
-.solutions .sol-scroll-ul{
-    overflow-y: auto;
-
+.container-content-flex{
+    gap: 24px;
 }
-.solutions .sol-scroll-u li{
-    display: flex;
-
+.container-paragraph{
+    padding-right: 24px;
 }
-.container-image-sol img{
-   border-radius: 24px;
-   object-fit: fill;
-
-} */
-/* .sol-scroll-ul{
-    display: flex;
-    flex-direction: row;
-} */
+.button-link-flex{
+    margin-top: 48px;
+}
+.button-link-flex span{
+    margin-bottom: 2px;
+    padding-top: 0px;
+}
  .cards-grid{
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
  }
-
+.list-padding-sol .sol-scroll-ul-head{
+    padding:32px 0;
+}
+.solutions-scroll-list{
+    gap: 32px;
+}
+.sol-scroll-body{
+    padding-bottom: 0;
+}
+.products-and-services{
+    padding: 96px 0;
+}
+.card-padding{
+    padding: 24px;
 
 }
+.card-flex{
+    gap: 16px;
+}
+.card-cotent-flex{
+    gap: 16px;
+}
+.link-text{
+    margin-bottom: 2px;
+}
+.card-padding{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 233px;
+}
+.pr-ser-body-flex{
+    gap: 16px;
+}
+.gartner-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    min-height: 512px;
+    height: 100%;
+    max-height: 504.05px;
+    padding: 8px;
+    border-radius: 25px;
+    /* flex-direction: row-reverse; */
+}
+.gartner-image-container{
+    /* flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 16px;
+    padding-left: 0;
+    padding-bottom: 8px;
+    padding-top: 8px; */
+    order: 1;
+    width: 100%;
+    height: 100%;
+}
+.image-container-content-button{
+    width: 165.2px;
+}
+.gartner-image-container img{
+    /* aspect-ratio: 1.33333/1; */
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.gartner-content{
+    padding-right: 56px;
+  
+}
+.gartner-content .container-paragraph{
+    padding: 0;
+}
+.azure-global-head{
+    font-size: 40px;
+    font-family: font2;
 
+}
+.global-contents{
+    padding: 96px 56px !important;
+}
+.azure-global-paragraph{
+    padding: 0 48px;
+}
+.image-resoureces{
+    width: 66.6%;
+    margin: 0 auto;
+    margin-top: 32px; 
+}
+.Resources-by-role .main-head{
+    font-size: 30px;
+}
+.next-step{
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-3up-icon-card-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1024&qlt=100&fmt=png-alpha&fit=constrain);
+    background-position: center;
+         background-size: cover;
+ }
+ .next-step-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 16px;
+ }
+ .next-step-card{
+    padding: 24px;
+
+ }
+ .next-step-content{
+    gap: 24px;
+ }
+ .scrollble-card-flex{
+    flex-direction: row-reverse;
+ }
+ .scrollable-card-image-container img{
+    height: 100%;
+ }
+ .scrollable-card-content{
+    padding: 24px;
+  
+    max-width: 50%;
+
+ }
+ .scrollable-card-image-container{
+    min-width: 50%;
+    padding: 8px;
+ }
+ .scrollable-container-pragrapg{
+    overflow-wrap: break-word;
+ }
+ .customer-stories .scroll-button{
+    display: none;
+ }
+ .customer-stories{
+    padding-top:72px ;
+    padding-bottom:72px ;
+ }
+ .button-cards-customer-stories{
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    margin-top: 25px;
+    /* border:1px solid #ddd; */
+justify-content: center;
+ }
+ .sub-flex-button-cards{
+    display: flex;
+    border-radius: 24px;
+    border:1px solid #ddd;
+ }
+ .logo-button-card{
+    display: flex;
+    padding: 16px;
+
+ }
+ .logo-button-card-imagr{
+    /* height: 68px; */
+    max-width: 100%;
+    padding: 16px;
+    border-right: 1px solid #ddd;
+    object-fit: fill;
+    /* width: 136px; */
+
+ }
+ .no-border{
+    border: none;
+ }
+ .logo-button-card-imagr img{
+    aspect-ratio: 2.3333/1;
+    /* height: 36px; */
+    width: 84px;
+    object-fit: fill;
+
+
+ }
+ .scrollable-card-button{
+    width: 106.2px;
+ }
+ .footer-content-grid{
+    padding: 0 12px;
+    row-gap: 44px;
+ }
+
+footer {
+    padding-bottom: 3px;
+}
+.links-flex{
+    justify-content: flex-end;
+}
+ /* .lala{
+    height: 50px;
+ } */
+
+}
+@media (min-width:920px){
+    .logo-button-card-imagr img{
+        height: 45px !important;
+    }
+    .sub-flex-button-cards{
+        width: 100%;
+        flex-basis: fit-content;
+    }
+}
+
+@media(min-width:1440px){
+   .products-and-services .pr-ser-body-flex{
+        flex-direction: row;
+
+    }
+    .products-and-services .image-container{
+        flex: none;
+    }
+    .products-and-services .image-area img {
+        object-fit: cover;
+        border-radius: 24pxpx;
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 21 / 9;
+        grid-area: 1 / 1;
+    }
+    .products-and-services .image-container-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .products-and-services .image-area{
+        height: 100%;
+    }
+   .products-and-services .cards .hidden-1440{
+        display: none;
+    }
+    .products-and-services .only-for-1440{
+        display: block;
+    }
+   .products-and-services .button-link-flex{
+        display: flex;
+    }
+    .products-and-services .cards{
+        flex: 1;
+    }
+    .container-padding-12px{
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    .container-padding-12px{
+        max-width: 1328px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main-head{
+        font-size: 32px!important;
+    }
+    .gartner-content-head{
+        font-size: 32px;
+    }
+    .Resources-by-role .main-head {
+        font-size: 40px;
+    }
+    .logo-button-card-imagr img{
+        aspect-ratio: 2.3333/1;
+        
+        width: 100px;
+    
+    
+     }
+     .footer-content-grid{
+        display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    max-width:1328px;
+    margin-bottom: 9px;
+     }
+   .footer-bottom-grid{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
+    max-width:1328px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+   
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.language-flex{
+  flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+   }
 
 
 
