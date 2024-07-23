@@ -4,6 +4,9 @@
   background-color: black;
   margin: 4px 20px;
 }
+.menu-bar{
+  margin-left: -4px;
+}
 /* sizing-the logo */
 .microsoft-logo img {
   height: 23px;
