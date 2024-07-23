@@ -261,12 +261,47 @@ font-size: 13px;
 #hidden-1080{
  display: flex;
 }
+
+.navbar-first-links .pricing,
+.navbar-first-links .partner,
+.navbar-first-links .resources{
+display: none !important;
+}
+
+
 .search-icon{
   justify-content: flex-end;
 }
 .search-icon #hidden-860{
 display: flex;
 }
+}
+@media (min-width:1285px){
+  #hidden-1080{
+    display: flex;
+   }
+   
+   .navbar-first-links .pricing{
+    display: block !important;
+   }
+   /* .navbar-first-links .partner,
+   .navbar-first-links .resources{
+   display: none !important;
+   } */
+}
+@media (min-width:1376px){
+  .navbar-first-links .partner{
+    display: flex !important;
+  }
+}
+@media (min-width:1437px){
+  .navbar-first-links .resources{
+    display: block !important;
+  }
+  .navbar-first-links .more{
+    display: none !important;
+  }
+
 }
 @media (min-width:1920px){
   .azure-title span{
