@@ -404,6 +404,7 @@ font-family: font3;
     align-items: center;
     background-color: #fefefe;
     overflow: scroll;
+    scrollbar-width: none;
     
 }
 .res-rol-scroll li{
